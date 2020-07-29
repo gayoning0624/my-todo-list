@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css';
+
+.container{
+    /* border: thin red solid; */
+    width: 30%;
+    margin:auto;
+    border-radius: 20px;
+    height: 90vh;
+    background-color: white;
+    box-shadow: -8px 19px 31px -7px rgba(0,0,0,0.51);
+    position: relative;
+}
+body{
+    font-family: 'Coming Soon', cursive;
+	background: repeating-linear-gradient(
+		180deg,
+        rgba(255,238,245,1),
+        rgba(255,238,245,1) 1em,
+        rgba(247,250,255,1) 1em,
+        rgba(247,250,255,1) 3em
+	);
+	min-height: 100vh;
+
+}
+.heading{
+    /* border: thin green solid; */
+    border-radius: 20px 20px 0 0;
+    background: rgb(238,174,202);
+background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    padding: 2em 2em 1em 2em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.icons{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2em;
+    color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+    color: white;
+    line-height: 20px;
+    margin-top: 2em;
+
+}
+p{
+    color: white;
+    line-height: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.todo{
+    border-bottom: thin #b3ccff dashed;
+}
+.todo-body{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em;
+    color: #4d4d4d;
 }
 
-.App-link {
-  color: #61dafb;
+.iconbox{
+    color: plum;
+}
+.iconbox i{
+    padding-left: 1.5em;
+    font-size: 1.1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.new-todo{
+    background: rgb(238,174,202);
+background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+
+    
+}
+
+input{
+    border: none;
+    background-color: transparent;
+    color: white;
+
+    height: 3em;
+}
+
+input::placeholder{
+    color: white;
+    font-size: 1.2em;
+}
+
+
+.btn-primary{
+    background-color: rgb(238,174,202);
+    border: none;
+    border-radius: 10px;
+    font-weight: bolder;
+    color: white;
+}
+
+button{
+    padding: 1em;
+    width: 5em;
+}
+.todo-input{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+input:focus{
+    outline: none;
+    border: none;
+}
+
+button:focus{
+
+    outline: none;
 }
